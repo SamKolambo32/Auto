@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[=====Browser Started=====]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11353" started-at="2018-12-21T05:21:02Z" finished-at="2018-12-21T05:21:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11353" started-at="2018-12-21T05:21:02Z" finished-at="2018-12-21T05:21:13Z">
+      <class name="LoginT">
+        <test-method status="PASS" signature="LoadBrowser()[pri:0, instance:LoginT@32d992b2]" name="LoadBrowser" is-config="true" duration-ms="9288" started-at="2018-12-21T10:51:02Z" finished-at="2018-12-21T10:51:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoadBrowser -->
+        <test-method status="PASS" signature="ValidLogin()[pri:1, instance:LoginT@32d992b2]" name="ValidLogin" duration-ms="2048" started-at="2018-12-21T10:51:11Z" finished-at="2018-12-21T10:51:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+      </class> <!-- LoginT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
