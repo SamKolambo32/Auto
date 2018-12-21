@@ -19,7 +19,8 @@ public class UserMgtTest extends Base1Test {
 		//login to app
 		login.enterValidUserName();
 		UserPage.SelectUserNewApplicants();
-		
+		UserPage.SelectUserMgt();
+		UserPage.ClickAddNewButton();
 	
 	
 	
