@@ -18,9 +18,23 @@ public class UserMgtTest extends Base1Test {
 		
 		//login to app
 		login.enterValidUserName();
+		//Select User Management 
 		UserPage.SelectUserNewApplicants();
 		UserPage.SelectUserMgt();
 		UserPage.ClickAddNewButton();
+		UserPage.EnterUserName();
+		UserPage.EnterPassword();
+		UserPage.SelectTitleDropdown();
+		UserPage.EnterName();
+		UserPage.EnterOfficerID();
+		UserPage.EnterUserNRIC();
+		UserPage.EnterTelNo();
+		UserPage.EnterEmail();
+		UserPage.SelectStatusDropdown();
+		UserPage.SelectEffectiveDate();
+		UserPage.SelectUserRoleDropdown();
+		UserPage.SelectRadioGender();
+		UserPage.ClickSaveButton();
 	
 	
 	

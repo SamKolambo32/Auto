@@ -12,7 +12,7 @@ public class BasePa {
 
 	WebDriver driver;
 	public static FileInputStream fis;
-	public static String testdatafilepath = "F:\\EPIC_Backup\\Sam\\Automate_SPCS\\src\\test\\resources\\testdata.properties";
+	public static String testdatafilepath = "C:\\Users\\samitha_k\\git\\Auto\\Automate_SPCS\\src\\test\\resources\\testdata.properties";
 	
 	
 	public static String getTestData(String key) throws IOException, FileNotFoundException {

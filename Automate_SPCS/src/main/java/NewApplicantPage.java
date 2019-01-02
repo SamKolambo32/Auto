@@ -132,7 +132,7 @@ public class NewApplicantPage  extends BasePa{
 			Thread.sleep(1000);
 			//driver.findElement(NameOnCardTxt).sendKeys(getTestData("NameOnCard"));
 			//driver.findElement(idNumber).sendKeys("N3");
-			driver.findElement(idNumber).sendKeys(getTestData("NameOnCard"));
+			driver.findElement(idNumber).sendKeys(getTestData("NameOfMember"));
 			
 		} catch (Exception e) {
 			throw new Exception("Failed : idNumber " + e.getLocalizedMessage());
