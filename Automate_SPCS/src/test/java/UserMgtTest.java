@@ -36,6 +36,8 @@ public class UserMgtTest extends Base1Test {
 		UserPage.SelectRadioGender();
 		//test
 		UserPage.ClickSaveButton();
+		
+		
 	
 	
 	
