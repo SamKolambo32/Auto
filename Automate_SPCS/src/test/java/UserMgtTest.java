@@ -34,8 +34,7 @@ public class UserMgtTest extends Base1Test {
 		UserPage.SelectEffectiveDate();
 		UserPage.SelectUserRoleDropdown();
 		UserPage.SelectRadioGender();
-		//test
-		UserPage.ClickSaveButton();
+		
 		
 		
 	
