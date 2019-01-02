@@ -127,7 +127,7 @@ public WebDriver driver;
 
 		try {
 			
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			//driver.findElement(NameOnCardTxt).sendKeys(getTestData("NameOnCard"));
 			driver.findElement(Oid).sendKeys("123456");
 
