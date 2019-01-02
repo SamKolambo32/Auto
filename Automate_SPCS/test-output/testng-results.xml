@@ -5,19 +5,19 @@
       <![CDATA[=====Browser Started=====]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37060" started-at="2019-01-02T07:29:32Z" finished-at="2019-01-02T07:30:09Z">
+  <suite name="Default suite" duration-ms="39954" started-at="2019-01-02T07:41:34Z" finished-at="2019-01-02T07:42:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37060" started-at="2019-01-02T07:29:32Z" finished-at="2019-01-02T07:30:09Z">
+    <test name="Default test" duration-ms="39954" started-at="2019-01-02T07:41:34Z" finished-at="2019-01-02T07:42:14Z">
       <class name="UserMgtTest">
-        <test-method status="PASS" signature="LoadBrowser()[pri:0, instance:UserMgtTest@32d992b2]" name="LoadBrowser" is-config="true" duration-ms="4689" started-at="2019-01-02T12:59:32Z" finished-at="2019-01-02T12:59:37Z">
+        <test-method status="PASS" signature="LoadBrowser()[pri:0, instance:UserMgtTest@32d992b2]" name="LoadBrowser" is-config="true" duration-ms="6626" started-at="2019-01-02T13:11:34Z" finished-at="2019-01-02T13:11:41Z">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- LoadBrowser -->
-        <test-method status="PASS" signature="UserCreate()[pri:1, instance:UserMgtTest@32d992b2]" name="UserCreate" duration-ms="32351" started-at="2019-01-02T12:59:37Z" finished-at="2019-01-02T13:00:09Z">
+        <test-method status="PASS" signature="UserCreate()[pri:1, instance:UserMgtTest@32d992b2]" name="UserCreate" duration-ms="33303" started-at="2019-01-02T13:11:41Z" finished-at="2019-01-02T13:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCreate -->
