@@ -112,9 +112,9 @@ public WebDriver driver;
 
 		try {
 			Thread.sleep(2000);
-			WebElement sal = driver.findElement(TiltleType);
-			Select SalList = new Select(sal);
-			SalList.selectByIndex(1);
+			WebElement tiltleType = driver.findElement(TiltleType);
+			Select tiltleTypeList = new Select(tiltleType);
+			tiltleTypeList.selectByIndex(1);
 
 		} catch (Exception e) {
 			throw new Exception("Failed : SelectTitileDropdown " + e.getLocalizedMessage());
@@ -188,9 +188,9 @@ public WebDriver driver;
 
 		try {
 			Thread.sleep(2000);
-			WebElement gender = driver.findElement(status);
-			Select GenderList = new Select(gender);
-			GenderList.selectByIndex(1);
+			WebElement Status = driver.findElement(status);
+			Select statusList = new Select(Status);
+			statusList.selectByIndex(1);
 			
 		} catch (Exception e) {
 			throw new Exception("Failed : SelectStatusDropdown " + e.getLocalizedMessage());
