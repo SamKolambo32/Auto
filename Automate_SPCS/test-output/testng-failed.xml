@@ -5,7 +5,7 @@
     <classes>
       <class name="UserMgtTest">
         <methods>
-          <include name="UserCreate"/>
+          <include name="UserRoleSearch"/>
           <include name="LoadBrowser"/>
         </methods>
       </class> <!-- UserMgtTest -->

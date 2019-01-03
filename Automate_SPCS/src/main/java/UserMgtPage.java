@@ -12,6 +12,7 @@ public WebDriver driver;
 		this.driver = driver;
 	}
 	
+	//User Creation Page Objects
 	By UserLink = By.cssSelector("#section13.dropmenu");
 	By UserLink2 = By.id("user");
 	By BtnAddNew = By.xpath("//*[@class=\"cmd-btn cmd-btn-default addNew addUser\"]");
@@ -26,6 +27,17 @@ public WebDriver driver;
 	By userRole=By.id("userRole");
 	By Save=By.id("save");
 	By name=By.id("name");
+	
+	//User Role Creation Page Objects
+	By userRoleView=By.id("userRoleView");
+	By BtnAddNewUserRole = By.xpath("//*[@class='cmd-btn cmd-btn-default addNew addUserRole']");
+	By UserRole=By.id("code");
+	By UserRoleName=By.id("description");
+	By userLevel=By.id("userLevel");
+	By UserRoleCode=By.id("s_code");
+	By BtnSearchNewUserRole = By.xpath("//*[@class='cmd-btn cmd-btn-default searchUserRole']");
+	////*[@id="mainGrid"]/tbody/tr/td[@class=' dt-center']/a[1]
+	By BtnAssignPages = By.xpath("//*[@id='mainGrid']/tbody/tr/td[@class=' dt-center']/a[1]");
 	
 	
 	public void SelectUserNewApplicants() throws Exception {
@@ -268,6 +280,113 @@ public WebDriver driver;
 		}
 
 	}
+  
+  
+ /// User Role Mgt 
+  public void SelectUserRoleMgt() throws Exception {
+
+		try {
+			Thread.sleep(2000);
+			driver.findElement(userRoleView).click();
+			//MemberLink.click();
+			
+		} catch (Exception e) {
+			throw new Exception("Failed : SelectUserRoleMgt " + e.getLocalizedMessage());
+		}	
+		}
+  
+  
+  public void ClickAddNewUserRoleButton() throws Exception {
+
+		try {
+			Thread.sleep(2000);
+			driver.findElement(BtnAddNewUserRole).click();
+			//MemberLink.click();
+			
+		} catch (Exception e) {
+			throw new Exception("Failed : BtnAddNewUserRole " + e.getLocalizedMessage());
+		}	
+		}
+  
+  
+  public void EnterUserRole() throws Exception {
+
+		try {
+			
+			Thread.sleep(2000);
+			//driver.findElement(NameOnCardTxt).sendKeys(getTestData("NameOnCard"));
+			driver.findElement(UserRole).sendKeys(getTestData("NameOfUserRole"));
+		} catch (Exception e) {
+			throw new Exception("Failed : UserName " + e.getLocalizedMessage());
+		}
+
+	}
+  
+  public void EnterUserRoleName() throws Exception {
+
+		try {
+			
+			Thread.sleep(1000);
+			//driver.findElement(NameOnCardTxt).sendKeys(getTestData("NameOnCard"));
+			driver.findElement(UserRoleName).sendKeys("1");
+
+		} catch (Exception e) {
+			throw new Exception("Failed : UserRoleName " + e.getLocalizedMessage());
+		}
+
+	}
+  
+  public void SelectUserLevelDropdown() throws Exception {
+
+		try {
+			Thread.sleep(2000);
+			WebElement UserLevel = driver.findElement(userLevel);
+			Select UserLevelList = new Select(UserLevel);
+			UserLevelList.selectByIndex(1);
+			
+		} catch (Exception e) {
+			throw new Exception("Failed : SelectStatusDropdown " + e.getLocalizedMessage());
+		}
+
+	}
+	
+  public void SerchUserRole() throws Exception {
+
+		try {
+			
+			Thread.sleep(2000);
+			//driver.findElement(NameOnCardTxt).sendKeys(getTestData("NameOnCard"));
+			driver.findElement(UserRoleCode).sendKeys(getTestData("NameOfUserRole"));
+		} catch (Exception e) {
+			throw new Exception("Failed : UserName " + e.getLocalizedMessage());
+		}
+
+	}
+  
+  public void ClickSearchUserRoleButton() throws Exception {
+
+		try {
+			Thread.sleep(2000);
+			driver.findElement(BtnSearchNewUserRole).click();
+			//MemberLink.click();
+			
+		} catch (Exception e) {
+			throw new Exception("Failed : BtnSearchNewUserRole " + e.getLocalizedMessage());
+		}	
+		}
+  
+  public void ClickAssignPagesToUserRoleButton() throws Exception {
+
+		try {
+			Thread.sleep(4000);
+			driver.findElement(BtnAssignPages).click();
+			//MemberLink.click();
+			
+		} catch (Exception e) {
+			throw new Exception("Failed : ClickAssignPagesToUserRoleButton " + e.getLocalizedMessage());
+		}	
+		}
+  
   
   
 }

@@ -5,15 +5,16 @@ import org.testng.annotations.Test;
 
 public class UserMgtTest extends Base1Test {
 	
-	@Test(priority = 1)
+	
+	
+	
+	//@Test(priority = 1)
+	//User Creation 
 	public void UserCreate() throws FileNotFoundException, IOException, Exception {
 		
- 
 		LoginP login = new LoginP(driver);
 		NewApplicantPage NwAp = new NewApplicantPage(driver);
 		UserMgtPage UserPage = new UserMgtPage(driver);
-
-		
 		//driver.get("http://192.168.1.29:9085/SPCS_QA_V1.28/login.htm");
 		
 		//login to app
@@ -34,17 +35,59 @@ public class UserMgtTest extends Base1Test {
 		UserPage.SelectEffectiveDate();
 		UserPage.SelectUserRoleDropdown();
 		UserPage.SelectRadioGender();
-		
-		
-		
-	
-	
-	
-	
-	
-	
+		UserPage.ClickSaveButton();
+			
 	
 	}
+	
+	//User Role Creation
+	//@Test(priority = 2)
+	public void UserRoleCreate() throws Exception {
+		
+		LoginP login = new LoginP(driver);
+		NewApplicantPage NwAp = new NewApplicantPage(driver);
+		UserMgtPage UserPage = new UserMgtPage(driver);
+		
+		
+		//login to app
+		login.enterValidUserName();
+		//Select User Management  Page
+		UserPage.SelectUserNewApplicants();
+		UserPage.SelectUserRoleMgt();
+		UserPage.ClickAddNewUserRoleButton();
+		UserPage.EnterUserRole();
+		UserPage.EnterUserRoleName();
+		UserPage.SelectStatusDropdown();
+		UserPage.SelectUserLevelDropdown();
+		UserPage.ClickSaveButton();
+		
+				
+	}
+	
+	@Test(priority = 3)
+	public void UserRoleSearch() throws Exception {
+		
+		LoginP login = new LoginP(driver);
+		NewApplicantPage NwAp = new NewApplicantPage(driver);
+		UserMgtPage UserPage = new UserMgtPage(driver);
+		
+		
+		//login to app
+		login.enterValidUserName();
+		//Select User Management  Page
+		UserPage.SelectUserNewApplicants();
+		UserPage.SelectUserRoleMgt();
+		UserPage.SerchUserRole();
+		UserPage.ClickSearchUserRoleButton();
+		UserPage.ClickAssignPagesToUserRoleButton();
+		
+		
+		
+		
+	}
+	
+	
+	
 	
 	
 	
