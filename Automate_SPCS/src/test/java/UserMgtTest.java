@@ -40,51 +40,7 @@ public class UserMgtTest extends Base1Test {
 	
 	}
 	
-	//User Role Creation
-	//@Test(priority = 2)
-	public void UserRoleCreate() throws Exception {
-		
-		LoginP login = new LoginP(driver);
-		NewApplicantPage NwAp = new NewApplicantPage(driver);
-		UserMgtPage UserPage = new UserMgtPage(driver);
-		
-		
-		//login to app
-		login.enterValidUserName();
-		//Select User Management  Page
-		UserPage.SelectUserNewApplicants();
-		UserPage.SelectUserRoleMgt();
-		UserPage.ClickAddNewUserRoleButton();
-		UserPage.EnterUserRole();
-		UserPage.EnterUserRoleName();
-		UserPage.SelectStatusDropdown();
-		UserPage.SelectUserLevelDropdown();
-		UserPage.ClickSaveButton();
-		
-				
-	}
 	
-	@Test(priority = 3)
-	public void UserRoleSearch() throws Exception {
-		
-		LoginP login = new LoginP(driver);
-		NewApplicantPage NwAp = new NewApplicantPage(driver);
-		UserMgtPage UserPage = new UserMgtPage(driver);
-		
-		
-		//login to app
-		login.enterValidUserName();
-		//Select User Management  Page
-		UserPage.SelectUserNewApplicants();
-		UserPage.SelectUserRoleMgt();
-		UserPage.SerchUserRole();
-		UserPage.ClickSearchUserRoleButton();
-		UserPage.ClickAssignPagesToUserRoleButton();
-		
-		
-		
-		
-	}
 	
 	
 	
